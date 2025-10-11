@@ -6,12 +6,12 @@ using namespace std;
 class empleado
 {
     private: //nace de la relcion tiene
-    char nombre [10]: //10 bytes
+    char nombre [10];//10 bytes
     int edad;
-    char direction[255] //255 bytes
+    char direction[255]; //255 bytes
     int telefono; //4b
 
-    public: interfaz nace de usa
+    public: //interfaz nace de usa
     int leeredad ()
     {return 0;
     
@@ -19,7 +19,7 @@ class empleado
 
 
 
-}   //273 bytes
+}  ; //273 bytes
 int main(int argc, char const *argv[])
 {
 
@@ -36,6 +36,8 @@ cout << "Tamano de char" <<sizeof(char) << endl;
 cout << "Tamano de byte" <<sizeof(byte) << endl;
 cout << "Tamano de bool" <<sizeof(bool) << endl;
 
+
+
 cout << "Tamano de puntero" <<sizeof(int*) << endl;
 //tamano tipos no nativos
 empleado empleados[10]; //273 bytes
@@ -45,5 +47,18 @@ cout << "empleados" <<empleados[0].leeredad() << endl;
 int a = 64;
 char b = (char) a;
 cout << b << endl;
+
+
+//P unteros en c y c++
+int* dirA = (int*)malloc(sizeof(int)); //c
+*dirA = 24;
+free(dirA);
+
+int* dirB = new int(24);    //c++ 
+
+//smart pointer
+
+cout<< *dirA << endl;
+cout<< *dirB << endl;
     return 0;
 }
