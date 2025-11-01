@@ -12,7 +12,7 @@ using namespace ftxui;
 const std::vector<std::u32string> coche_sedan = {
     U"  ____ ",
     U" /_||_\\",
-    U"O----O "
+    U"|O----O| "
 };
 
 const std::vector<std::u32string> coche_camioneta = {

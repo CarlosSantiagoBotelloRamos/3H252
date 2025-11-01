@@ -1,7 +1,7 @@
 
 #pragma once
 
-// Clase para dibujar figuras ASCII en la pantalla usando FTXUI
+
 #include <vector>
 #include <string>
 #include <ftxui/screen/screen.hpp>

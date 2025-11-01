@@ -19,6 +19,7 @@ public:
         }
     }
 
+    
     void DibujarTodos(ftxui::Screen& screen) const {
         for (const auto& dibujo : dibujos) {
             dibujo.Dibujar(screen);
